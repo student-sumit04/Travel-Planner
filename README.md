@@ -71,6 +71,19 @@ UPLOADTHING_SECRET="your-uploadthing-secret"
 UPLOADTHING_APP_ID="your-uploadthing-app-id"
 ```
 
+### Vercel Environment Variables Setup
+When deploying to Vercel, add these environment variables in your project settings:
+
+**Required Variables:**
+- `DATABASE_URL` - Your PostgreSQL connection string (Neon/Supabase)
+- `NEXTAUTH_URL` - Your production URL (e.g., https://your-app.vercel.app)
+- `NEXTAUTH_SECRET` - Random secret key for NextAuth.js
+- `NEXT_PUBLIC_GOOGLE_MAPS_API_KEY` - Google Maps API key
+- `GITHUB_CLIENT_ID` - GitHub OAuth App Client ID
+- `GITHUB_CLIENT_SECRET` - GitHub OAuth App Client Secret
+- `UPLOADTHING_SECRET` - UploadThing secret key
+- `UPLOADTHING_APP_ID` - UploadThing application ID
+
 ### 4. Database Setup
 ```bash
 # Generate Prisma client
